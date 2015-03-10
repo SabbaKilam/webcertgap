@@ -1,0 +1,327 @@
+/**
+// Author: Abbas Abdulmalik
+// Creation Date: March 9 2015
+// Revised: March 9, 2015
+// Note: Web Dev
+*/
+
+body{
+    font-family: sans-serif;
+    font-size: 2rem;
+    background: lightgray;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+#content{
+    width: 100%;
+    margin: 0 auto;
+}
+.layer{
+    position: absolute;
+    font-family: Arial, Tahoma, Candara, sans-serif;
+    background: black;
+    width: 35%;  
+    box-shadow: 0.5rem  0 1rem black;  
+}
+
+#shroud{
+    box-shadow: none;
+    width: 100%;
+    z-index: 3;
+    min-height: 100%;
+    visibility: hidden;
+    background: rgba(0,0,0,0.6);
+}
+div#shroudContent{
+/* ==================================== */    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;     
+/* ==================================== */ 
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    /* ==================================== */
+    background: -webkit-linear-gradient(white,hsl(204, 89%, 55%));
+    background: -moz-linear-gradient(white,hsl(204, 89%, 55%));
+    background: -ms-linear-gradient(white,hsl(204, 89%, 55%));
+    background: -o-linear-gradient(white,hsl(204, 89%, 55%));
+    background: linear-gradient(white,hsl(204, 89%, 55%));
+    /* ==================================== */ 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;  
+    /*=====================*/    
+    box-shadow: 2rem 2rem 4rem black;
+    border-radius: 3rem;
+    z-index: 4;
+}
+div#envelope{
+    width: 35rem;
+    height: 17rem;
+    margin: 0 auto;
+    background: url(../images/envelope.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+   
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-top: 2%;  
+}
+div#envelope:hover{
+    color: white; 
+    text-shadow: 0.5rem 0.5rem 1rem black;     
+}
+
+#topicHolder{
+    position: absolute;
+    background: lightgray;
+    width: 100%;
+    left: 0;
+    box-shadow: 2px 2px 3rem; 
+    /*=====================*/
+    -webkit-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    transition: width 0.25s ease;  
+    /*=====================*/
+}
+#topicContents{
+    position: absolute;
+}
+
+.topic{
+    left: 0;
+    font-size: 2.7rem;   
+    padding: 3%;
+    padding-left: 8%;
+    border-left: 1.5rem solid green;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#topic1{
+    border-left: 1.5rem solid lightgray;
+}
+#topic2{
+    border-left: 1.5rem solid hsl(204, 89%, 55%);
+}
+#topic3{
+    border-left: 1.5rem solid hsl(162, 53%, 39%);
+}
+#topic4{
+    border-left: 1.5rem solid hsl(40, 53%, 48%);
+}
+#topic5{
+    border-left: 1.5rem solid hsl(9, 63%, 53%);
+}
+#topic6{
+    border-left: 1.5rem solid hsl(277, 97%, 70%);
+}
+
+#heading{
+    position: absolute;
+    width: 80%;
+    top: 0;
+    z-index: 2;
+    /* ==================================== */
+    background: -webkit-linear-gradient(white,black);
+    background: -moz-linear-gradient(white,black);
+    background: -ms-linear-gradient(white,black);
+    background: -o-linear-gradient(white,black);
+    background: linear-gradient(white,black);
+    /* ==================================== */    
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.7%;    
+    font-family: Arial, Tahoma, Candara, sans-serif;
+    color: black;
+    font-size: 3.2rem;
+    box-shadow: 0.25rem 0.25rem 1.5rem;
+    border-radius: 1rem;    
+/* ==================================== */    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;     
+/* ==================================== */ 
+    cursor: pointer;
+}
+#heading:hover{
+    font-size: 3.3rem;
+    text-shadow: 2rem 2rem 4rem black;    
+}
+
+#subHeading{
+    font-size: 3rem;
+    font-weight: normal;
+    color: white;
+}
+
+#menu{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#topicContents{
+    overflow-y: auto;
+    position: absolute;
+    right:0;
+    width: 60rem;
+    padding-right: 2;
+    max-height: 98%;
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: 5%;
+/* ==================================== */        
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
+/* ==================================== */    
+}
+
+#pixels{
+    position: absolute;
+    text-align: center;
+    width: 10%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    color: black;
+    background: white;
+    padding: 2%;
+    margin: 2%;
+    font-size: 4rem;
+}
+#iframe{
+    z-index: -1;
+    position: absolute;
+}
+/* =============Media Queries============== */
+@media screen and (min-width: 1001px){
+    #topicContents{
+        font-size: 2.3rem;
+    }
+    .topic{
+        font-size: 2.7rem;
+    }
+    div#shroudContent{
+        width: 30rem;
+        height: 30rem;
+        font-size: 1.8rem;    
+    }
+    div#envelope{
+        width: 22.5rem;
+        height: 12rem;
+        font-size: 2.25rem
+    }
+}
+@media screen and (min-width: 901px)
+and (max-width: 1000px){
+    #topicContents{
+        font-size: 2.3rem;
+    }
+    .topic{
+        font-size: 2.7rem;
+    }    
+}
+
+@media screen and (min-width: 801px)
+and (max-width: 900px){
+    #topicContents{
+        font-size: 2.5rem;
+    }
+    .topic{
+        font-size: 2.8rem;
+    }    
+}
+@media screen and (min-width: 701px)
+and (max-width: 800px){
+    #topicContents{
+        font-size: 2.7rem;
+    }
+    .topic{
+        font-size: 2.9rem;
+    }     
+}
+
+@media screen and (min-width: 601px)
+and (max-width: 700px){
+    #topicContents{
+        font-size: 3rem;
+    }
+    .topic{
+        font-size: 3rem;
+    }    
+}
+
+@media screen and (min-width: 501px)
+and (max-width: 600px){
+    #topicContents{
+        font-size: 3.5rem;
+    }
+    .topic{
+        font-size: 3.1rem;
+    }     
+}
+
+@media screen and (min-width: 401px)
+and (max-width: 500px){
+    #topicContents{
+        font-size: 4rem;
+    }
+    .topic{
+        font-size: 3.2rem;
+    }    
+}
+
+@media screen and (min-width: 50px)
+and (max-width: 400px){
+    #topicContents{
+        font-size: 5rem;
+    }
+    .topic{
+        font-size: 3.4rem;
+    }
+    div#shroudContent{
+        width: 50rem;
+        height: 50rem;
+        font-size: 3.5rem;    
+    }
+    div#envelope{
+        width: 35rem;
+        height: 17rem;
+        font-size: 3.5rem
+    }    
+}
+/* ==================================== */
+/*
+@media screen and (min-width: px)
+and (max-width: px){
+    #topicContents{
+        font-size: rem;
+    }
+    .topic{
+        font-size: rem;
+    }
+}
+*/
+/* =============================  END  =============================== */
+
+
